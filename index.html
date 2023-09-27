@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemos Api</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="index.js" defer ></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container_principal">
+        <img class="titulo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1920px-International_Pok%C3%A9mon_logo.svg.png" alt="img_principal">
+        <div class="container">
+            <div  id="botonElemento"></div>
+        </div>
+        <h2 class="titulo_sec">Pokemones</h2>
+        <div class="inputs_buscar_cantidad">
+            <div class="container_buscar">
+                <input type="text" id="buscarPokemon" placeholder="Buscar Pokemon">
+                <button id="buscarBoton">Buscar</button>
+            </div>
+            <div class="container_mostrar">
+                <input type="number" id="cantidadPokemon" value="20" min="1" max="78">
+                <button id="filtrarCantidad">Mostrar</button>
+            </div>
+        </div>
+        <div class="pokemon-cards-container" id="pokemonCards"></div>
+    </div>
+</body>
+</html>

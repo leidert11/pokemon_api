@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("https://i.pinimg.com/originals/f5/05/f5/f505f5040274b97cd5114f9ff3ab8b99.jpg");
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+
+}
+
+.container_principal {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pokemon-card {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 10px;
+    display: inline-flex;
+    border-radius: 6px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.pokemon-card img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.pokemon-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.titulo {
+    margin: 10px;
+    height: 9rem;
+}
+
+.titulo_sec {
+    margin: 10px;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+
+}
+
+.pokemon-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0;
+}
+
+.abilities {
+    border: 0px;
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    max-width: 80%;
+}
+
+.tipo-boton {
+    color: rgb(136, 136, 15);
+    height: 2rem;
+    width: 4.8rem;
+    font-weight: 600;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 0px;
+    margin: 15px 4px 15px 10px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+.tipo-boton:hover {
+    background-color: rgb(62, 64, 63);
+    cursor: pointer;
+    transition: 1s;
+    color: white;
+}
+
+
+#cantidadPokemon {
+    width: 12rem;
+    height: 2rem;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid rgb(235, 235, 17);
+    font-weight: 600;
+
+}
+
+#filtrarCantidad {
+    margin-left: 10px;
+    height: 2rem;
+    width: 5rem;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(136, 136, 15);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.inputs_buscar_cantidad {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#buscarPokemon {
+    width: 12rem;
+    height: 2rem;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid rgb(235, 235, 17);
+    font-weight: 600;
+    cursor: pointer;   
+    
+}
+#buscarBoton {
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 2rem;
+    width: 5rem;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(136, 15, 15);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+#buscarPokemon,
+#cantidadPokemon {
+    height: 2rem;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid rgb(235, 235, 17);
+    font-weight: 600;
+    cursor: pointer;
+}
+.container_buscar,
+.container_mostrar {
+    margin: 0 40px; 
+}
+
+@media screen and (max-width: 600px) {
+    .inputs_buscar_cantidad {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .inputs_buscar_cantidad input,
+    .inputs_buscar_cantidad button {
+        margin: 15px 0;
+        height: 4.5rem;
+    }
+}
